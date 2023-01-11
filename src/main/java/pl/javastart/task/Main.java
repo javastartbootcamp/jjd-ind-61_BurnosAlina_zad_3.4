@@ -13,7 +13,7 @@ public class Main {
                 category2);
         Product product4 = new Product("Chleb", 5.2, "Chleb zytni z ziarnami");
         SpecialOffer offer = new SpecialOffer(product4, "Kazdy chleb 20% taniej",
-                "11.01.2023 - 31.01.2023", 20);
+                "11.01.2023 - 31.01.2023", 0.2);
         System.out.println("Produkty w naszym sklepie:\n" + product1.name + ", " + product1.price + "zl, " +
                 product1.description + ", " + product1.category.name + ", " + product1.category.description);
         System.out.println(product2.name + ", " + product2.price + "zl, " +
@@ -23,6 +23,6 @@ public class Main {
         System.out.println(product4.name + ", " + product4.price + "zl, " +
                 product4.description);
         System.out.println("Oferta specjalna:\n" + offer.description + "\nCzas trwania promocji: " + offer.time +
-                "\nOferta na produkt: " + offer.product.name + "\nRabat: " + offer.discount + "%");
+                "\nOferta na produkt: " + offer.product.name + "\nRabat: " + offer.discount);
     }
 }

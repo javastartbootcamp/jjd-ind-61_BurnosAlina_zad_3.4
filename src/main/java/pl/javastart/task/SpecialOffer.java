@@ -4,9 +4,9 @@ public class SpecialOffer {
     Product product;
     String description;
     String time;
-    int discount;
+    double discount;
 
-    SpecialOffer(Product product, String description, String time, int discount) {
+    SpecialOffer(Product product, String description, String time, double discount) {
         this.product = product;
         this.description = description;
         this.time = time;
